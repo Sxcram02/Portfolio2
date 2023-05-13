@@ -1,0 +1,3 @@
+-- --------------------------
+-- MySQL Script By Marcos Dominguez
+-- @charset

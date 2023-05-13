@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    list-style: none;
+}
+
+:root {
+    --color-base:rgba(67, 17, 143, 0.893);
+    --color-fondo:linear-gradient(180deg,rgba(155, 219, 253, 0.626),rgba(190, 222, 255, 0.583),rgba(232, 233, 234, 0.583),transparent);
+}
+
+body {
+    width: 100vw;
+}
+
+.root {
+    width: 100vw;
+    height: 100%;
+    background-image: url("./../img/alpes-en-austria_2560x1600_xtrafondos.com.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    width: 100vw;
+    height: 10em;
+    background:var(--color-fondo);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title {
+    font-weight: 800;
+    color: aliceblue;
+    text-shadow: 2px 1px black;
+    font-size: 25px;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    color:lightcyan;
+    text-shadow: 1px 2px black;
+}
+
+.nav-bar li {
+    padding: 3%;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.nav-bar li:hover {
+    color: rgba(97, 212, 235, 0.961);
+    border-radius: 10px;
+    background-color:rgba(59, 59, 59, 0.486);
+    transition: all 0.2s;
+}
+
+main {
+    width: 100vw;
+    height: 100%;
+    background:linear-gradient(360deg,rgba(155, 219, 253, 0.626),rgba(190, 222, 255, 0.583),rgba(232, 233, 234, 0.583),transparent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    padding: 2%;
+}
+
+.intro {
+    text-align: center;
+    font-weight: 400;
+    color: lightcyan;
+    text-shadow: 1px 1px black;
+    background-color: rgba(59, 59, 59, 0.486);
+    display: flex;
+    flex-direction: column;
+}
+
+.intro p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.intro h1 {
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+.content {
+    background-color: rgba(59, 59, 59, 0.486);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faltas-tabla {
+    font-size: 12pt;
+    border: 1px solid black;
+    color: azure;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:azure;
+    text-shadow: 1px 1px black;
+}
+
+input[type="text"] {
+    text-align: center;
+    font-weight: 800;
+    padding: 2%;
+    border: none;
+    margin:2%
+}
+
+input[type="text"]:hover {
+    background-color:aliceblue;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button {
+    width: 256px;
+    text-align: center;
+    border: none;
+    font-weight: 800;
+    color:var(--color-base);
+    cursor: pointer;
+    background-color: rgb(130, 177, 238);
+    padding: 2%;
+}
+
+button:hover {
+    background-color: rgba(85, 85, 84, 0.648);
+    color:orange;
+    transition: all 0.2s;
+}
+
+@media (min-width:500px) {
+    .root {
+        overflow: hidden;
+        height: 100vh;
+    }
+    
+    main {
+        height: 100%;
+    }
+
+    section {
+        width: 50%;
+    }
+
+    .nav-bar {
+        justify-content: start;
+    }
+
+    .nav-bar li {
+        padding: 1%;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <!-- Añadimos la fuente de Google Fonts Poppins -->
+    <!-- Nota: también podeis hacer uso de la descargada en la carpeta /fonts -->
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <!-- Enlazamos nuestra hoja de estilos -->
+
+    <!-- Enlazamos el logo del CIFP como favicon -->
+
+    <title>Palabra del CIFP</title>
+</head>
+
+<body>
+	<div>
+		<nav>
+		    <!-- Barra de navegación con el título y logo -->
+		    <!-- Título -->
+			<ul>
+				<li><h1>LA PALABRA</h1></p>
+		    	<li><p class="subtitle">DEL CIFP</p></li>
+			</ul>
+			<div>
+				<img src="img/logo.png" alt="logo" />
+	            <!-- Imagen con el logo-->
+			</div>
+		</nav>
+		<section>
+			<article>
+			    <!-- Representamos el tablero del juego "La palabra del CIFP" -->
+			    <table cellspacing="5" cellpadding="5">
+                    <thead>
+			            <!-- Título de la tabla-->
+			            <h2>ESCRÍBELA EN 5 INTENTOS</h2>
+                    </thead>
+                    <form action="#" method="POST">
+                        <tbody>
+			                <!-- Formulario de letras -->
+			                <!-- Ten en cuenta:
+			                    - A excepción de la penultima fila de campos de texto, el resto se encuentran desahibilitados.
+			                    - Como máximo podemos escribir una letra por campo.
+			                    - Cuando se cargue la página se debe enfocar en el úlitmo campo de la penultima fila, es decir, en la letra "N"
+			                    - Nombramos a los 5 campos de cada fila de la misma manera (letra1, letra2 ... letra)-->
+			                <!-- Filas de campos rellenados, coloreados y deshabilitados -->
+                            <tr>
+                                <td><input type="text" name="letra1" class="existe" minlength="1" maxlength="1" value="A" disabled /></td>
+                                <td><input type="text" name="letra2" class="existe" minlength="1" maxlength="1" value="R" disabled /></td>
+                                <td><input type="text" name="letra3" class="incorrecto" minlength="1" maxlength="1" value="M" disabled /></td>
+                                <td><input type="text" name="letra4" class="incorrecto" minlength="1" maxlength="1" value="A" disabled /></td>
+                                <td><input type="text" name="letra5" class="incorrecto" minlength="1" maxlength="1" value="R" disabled /></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="letra1" class="incorrecto" minlength="1" maxlength="1" value="M" disabled /></td>
+                                <td><input type="text" name="letra2" class="correcto" minlength="1" maxlength="1" value="A" disabled /></td>
+                                <td><input type="text" name="letra3" class="existe" minlength="1" maxlength="1" value="R" disabled /></td>
+                                <td><input type="text" name="letra4" class="incorrecto" minlength="1" maxlength="1" value="C" disabled /></td>
+                                <td><input type="text" name="letra5" class="existe" minlength="1" maxlength="1" value="O" disabled /></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="letra1" class="incorrecto" minlength="1" maxlength="1" disabled value="D"/></td>
+                                <td><input type="text" name="letra2" class="correcto" minlength="1" maxlength="1" value="A" disabled /></td>
+                                <td><input type="text" name="letra3" class="correcto" minlength="1" maxlength="1" value="T" disabled /></td>
+                                <td><input type="text" name="letra4" class="correcto" minlength="1" maxlength="1"  value="O" disabled /></td>
+                                <td><input type="text" name="letra5" class="incorrecto" minlength="1" maxlength="1" value="S" disabled /></td>
+                            </tr>
+                            <tr>
+                                <!-- Fila de campos editables-->
+                                <td><input type="text" name="letra1" class="" minlength="1" maxlength="1" value="R" disabled /></td>
+                                <td><input type="text" name="letra2" class="" minlength="1" maxlength="1" value="A" disabled /></td>
+                                <td><input type="text" name="letra3" class="" minlength="1" maxlength="1" value="T" disabled /></td>
+                                <td><input type="text" name="letra4" class="" minlength="1" maxlength="1" value="O" disabled /></td>
+                                <td><input type="text" name="letra5" class="" minlength="1" maxlength="1" value="N" disabled /></td>
+                            </tr>
+                            <tr>
+                                <!-- Fila de campos "desactivada" que estará disponible en el próximo intento -->
+                                <td><input type="text" name="<?php $letra1 ?>" class="<?php $respuesta ?>" minlength="1" maxlengthlength="1" value="<?php $letra1 ?>" /></td>
+                                <td><input type="text" name="<?php $letra2 ?>" class="<?php $respuesta ?>" minlength="1" maxlength="1" value="<?php $letra2 ?>"/></td>
+                                <td><input type="text" name="<?php $letra3 ?>" class="<?php $respuesta ?>" minlength="1" maxlength="1" value="<?php $letra3 ?>"/></td>
+                                <td><input type="text" name="<?php $letra4 ?>" class="<?php $respuesta ?>" minlength="1" maxlength="1" value="<?php $letra4 ?>"/></td>
+                                <td><input type="text" name="<?php $letra5 ?>" class="<?php $respuesta ?>" minlength="1" maxlength="1" value="<?php $letra5 ?>"/></td>
+                            </tr>
+                        </tbody>
+                    </form>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">
+                                <!-- Botón para enviar la fila que corresponda -->
+                                <button type="submit" name="<?php $enviar ?>" class="enviar">ENVIAR</button>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+            <article class="container-rules">
+                <div>        
+                    <!-- Sección con información sobre el juego -->
+                    <!-- Encabezado de la sección -->
+                    <h2>Bienvenido a la palabra del CIFP</h2>
+
+                    <!-- Reglas del juego -->
+                    <p>Las reglas son simples: adivina la palabra oculta en 5 intentos. Las palabras guardan relación con las 3 familias profesionales existentes en el Centro Integrado de Formación Profesional Nº1 de Ceuta.<p>
+
+                    <!-- Funcionamiento -->
+                    <p>Después de cada intento el color de las casillas cambia para mostrar qué tan cerca estás de acertar la palabra.</p>
+                </div>
+                <div class="colors-legend">
+                    <!-- Añade aqui un salto de línea -->
+                    <!-- Guía de colores -->
+                    <h2>Los colores indican:</h2>
+                    <!-- Color AMARILLO -->
+                    <p class="existe">AMARILLO indica que la letra está en la palabra pero no en la posición correcta.</p>
+                    <!-- Color VERDE -->
+                    <p class="correcto">VERDE significa que la letra está en la palabra y en la posición correcta.</p>
+                    <!-- Color AZUL -->
+                    <p class="incorrecto">AZUL indica que la letra no está presente en la palabra.</p>
+                </div>
+            </article>
+		</section>	
+		<footer>
+            <!-- Pie de página fijo abajo -->
+            <h3>Copyright 2022 &#169; CIFP Nº1 de Ceuta</h3>
+		</footer>
+	</div>
+</body>
+
+</html>

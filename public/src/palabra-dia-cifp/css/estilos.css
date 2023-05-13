@@ -1,0 +1,211 @@
+/*  
+    ---- LEEME 📝 ----
+    En esta hoja de estilos en cascada podeis encontrar una
+    serie de indicaciones y pistas que os pueden ser de ayuda
+    para lograr el resultado final esperado.
+
+    Sin embargo, esto no quiere decir que sea la unica manera 
+    de proceder, ni que esten todos los selectores, si no que 
+    podeis desechar las reglas CSS que creais conveniente y crear
+    otras nuevas ya que existen distintas formas de lograrlo.
+    
+    --- Mucha suerte! 🍀👨‍💻👩‍💻 ---
+*/
+html {
+    /* 
+    - Elegimos Poppins como la familia de fuente principal
+    - Aseguramos que se muestre otra en caso de fallo.
+    */
+}
+
+body {
+    /* 
+    Sugerencia de propiedades que utilizar:
+    - Color de fondo  
+    - Sin margenes
+    - Ocupamos todo el ancho
+    - La altura mínima ocupa toda la pantalla
+    - Separacion abajo para el pie de página  
+    */
+}
+
+div {
+    /* 
+    Sugerencia de propiedades por utilizar:
+    - Flotar los elementos 
+    - Margenes arriba, abajo y a la derecha para separarlo de la imagen
+    */
+}
+
+h2 {
+    /* 
+    Sugerencia de propiedades por utilizar:
+    - Tamaño de letra
+    - Sin margenes
+    - Sin espaciado
+    */
+}
+
+img {
+    /* Alineamos al centro */
+}
+
+h3, img {
+    /*
+    Sugerencia de propiedades por utilizar:
+    - Sin margenes
+    - Sin espaciado
+    */
+} 
+
+h3 {
+    /* 
+    Sugerencia de propiedades por utilizar:
+    - Color de letra
+    - Centramos el elemento
+    */
+}
+
+h4 {
+    /* 
+    Sugerencia de propiedad por utilizar:
+    - Tamaño de letra 
+    */
+}
+
+p, h4 {
+    /* 
+    Sugerencia de propiedades por utilizar:
+    - Alineamos al centro
+    - Margenes laterales del 10%
+    - Espaciado 
+    */
+}
+
+table {
+    /* 
+    Sugerencia de propiedades por utilizar:
+    - Borde colapsado
+    - Color de fondo
+    - Color de letra
+    - Espaciado
+    - Centramos la tabla
+    - Separación con el elemento de abajo
+    */
+}
+
+table caption {
+    /* 
+    Sugerencia de propiedades por utilizar:
+    - Tamaño de letra
+    - Peso de la fuente
+    - Alineado
+    - Separación con el siguiente elemento
+    */
+}
+
+input {
+    /* 
+    Sugerencia de propiedades por utilizar:
+    - Ancho y alto
+    - Alineado
+    - Tamaño de letra
+    - Peso de la fuente
+    - Color de letra
+    - Borde de los campos en lightgray
+    - Espaciado
+    - Bordes redondeados
+    - Transformamos el texto a mayúsculas
+    */
+}
+
+/* Aplicamos los estilos necesarios para el campo de texto se vea igual cuando lo deshabilitemos */
+input: {
+    -webkit-text-fill-color: white; /* Para que se muestre correctamente en Safari*/
+    /* 
+    Sugerencia de propiedades por utilizar:
+    - Color de letra
+    - Opacidad
+    */
+}
+
+/* Esta regla unicamente desahabilita el campo ante los eventos de ratón y cambia el color de fondo */
+.desactivar {
+    /* 
+    Sugerencia de propiedades por utilizar:
+    - Eventos del puntero
+    - Color de fondo
+    */
+}
+
+button {
+    /* 
+    Sugerencia de propiedades por utilizar:
+    - Color de fondo
+    - Color de letra
+    - Sin bordes
+    - Bordes redondeados
+    - Espaciado
+    - Tamaño de letra
+    - Peso de la fuente
+    - Centramos el contenido
+    - Ocupamos todo el ancho
+    */
+}
+
+
+/* Cuando nos posicionemos encima del botón debe cambiarse el color a gris oscuro */
+button: {
+    /* 
+    Sugerencia de propiedades por utilizar:
+    - Color de fondo
+    - Color de letra
+    */
+}
+
+section {
+    /* 
+    Sugerencia de propiedades por utilizar:
+    - Color de fondo
+    - Espaciado
+    - Espaciado inferior
+    - Margenes
+    - Bordes redondeados
+    - Sombra
+    */
+}
+
+footer {
+    /* 
+    Sugerencia de propiedades por utilizar:
+    - Posición fijada
+    - Sin espacio debajo
+    - Ancho que ocupa toda la pantalla
+    - Alto
+    - Fondo
+    - Color de letra
+    - Espaciado superior
+    - Alineación
+    */
+}
+
+.existe {
+    /* Cambiamos color de fondo y de letra */
+}
+
+
+p.existe {
+    /* Estilo para el que el borde de la sección amarilla tenga bordes superiores redondeados */
+}
+
+.correcta {
+    /* Cambiamos color de fondo y de letra */
+}
+
+.incorrecta {
+    /* Cambiamos color de fondo y de letra */
+}
+
+p.incorrecta {
+    /* Estilo para el que el borde de la sección azul tenga bordes inferiores redondeados */
+}

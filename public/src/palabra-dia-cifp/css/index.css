@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;1,700&display=swap');
+
+/*PROFESOR ME LIABA MUCHO LEYENDO SUS COMENTARIOS Y DECIDI HACER EL EJERCICIO EN OTRO NUEVO TOMANDO MIS MEDIDAS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    width: 100vw;
+    background-color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    background-color: rgb(231, 226, 226);
+    box-shadow: 1px 1px 7px gray;
+}
+
+ul {
+    font-weight: 800;
+    margin: 1%;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.subtitle {
+    color: gray;
+    text-align: center;
+}
+
+img {
+    max-width: 50px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4%;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+}
+
+table {
+    border: 1px initial gray;
+    border-spacing: 10px;
+}
+
+input {
+    max-width: 65px;
+    height: 65px;
+    color: black;
+    background-color: rgb(202, 202, 202);
+    font-size: 25px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+}
+
+p {
+    padding: 1%;
+}
+
+.correcto {
+    border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    background-color: #2C8221;
+}
+
+inut[value=""]{
+
+}
+
+.existe {
+    border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    background-color: #EFBC0C;
+} 
+
+.incorrecto {
+    border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    background-color:#0A4E92;
+}
+
+.enviar {
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    border: none;
+    height: 3rem;
+    cursor: pointer;
+    background-color: #0A4E92;
+    transition: 1s;
+}
+
+.enviar:hover {
+    background-color: rgba(9, 9, 134, 0.863);
+}
+
+.container-rules {
+    background-color: rgb(202, 202, 202);
+    box-shadow: 1px 1px 7px black;
+    text-align: center;
+    margin: 5%;
+    padding: 2%;
+}
+
+footer {
+    width: 100vw;
+    padding: 1%;
+    background-color: rgba(177, 177, 177, 0.856);
+    color: black;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-weight: 800;
+}
