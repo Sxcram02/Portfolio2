@@ -41,8 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['LOGIN'])) {
             </form>
         </header>
         <main class="container">
-            <section id="home_page">
-                <script src="/public/funciones/funciones.inc.js"></script>
+        <script src="/public/funciones/funciones.inc.js"></script>
+            <section id="home_page">      
                 <article class="box-name">
                     <h1 class="title">Hola!,Yo soy</h1>
                     <label id="box-ui-ux">UI/UX</label>

@@ -1,0 +1,820 @@
+
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+/* AJUSTES GENERALES */
+/* 1. HEADER
+/* 2. PRIMERA PAGINA
+/*  2.1 SECCION 1
+/*  2.2 SECCION 2
+/*  2.3 SECCION 3
+/*  2.4 SECCION 4
+/* 3. PAGINA DE MIS TRABAJOS
+/* 4. PAGINA DE MI BLOG
+/* 5. PAGINA FORMULARIO LOGIN
+/* 6. PAGINA CREAR POST
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a, a:active, a:visited, a:enabled {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/*");
+}
+
+:root {
+    --violeta-ruso: #120D31;
+    --cadet-space: #302F4D;
+    --verde-claro-oceano:#17C3B2;
+    --indigo-tropical:#9395D3;
+    --blanco:#FBFBFB;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+/* HEADER */
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+
+.box-nav-bar {
+    width: 100vw;
+    height: 4rem;
+    padding: 1%;
+    background-color: var(--violeta-ruso);
+    color: snow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title {
+    text-shadow: 1px 0px 0px var(--verde-claro-oceano);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav-bar ul {
+    text-transform: uppercase;
+    width: 350px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-bar ul li {
+    cursor: pointer;
+    text-shadow: 1px 0px 0px var(--verde-claro-oceano);
+}
+
+.nav-bar ul li:hover {
+    color: var(--verde-claro-oceano);
+    text-shadow: 1px 0px 0px var(--indigo-tropical);
+    transition: all 0.5s;
+}
+
+#LOGIN {
+    width: 125px;
+    height: 30px;
+    margin: 2%;
+    color: #B98EA7;
+    background: none;
+    border: 1px solid var(--verde-claro-oceano);
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#LOGIN:hover {
+    background-color: var(--verde-claro-oceano);
+    color: var(--blanco);
+    transition: all 0.3s;
+}
+
+@media screen and (max-width:800px) {
+    .box-nav-bar {
+        justify-content: center;
+    }
+    
+    .nav-title {
+        display: none;
+    }
+
+    .nav-bar ul {
+        justify-content: flex-start;
+        font-size: 12px;
+    }
+
+    #LOGIN {
+        width: 100px;
+        margin: 3%;
+    }
+}
+
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+/* PRIMERA PÁGINA */
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.container section {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #home-page {
+        height: 50vh;
+
+    }
+
+    .box-presentation {
+        background-image: url("../media/guerrero-en-47-ronin_2048x1536_xtrafondos.com.jpg");
+        background-position: center;
+        background-size: contain;
+        flex-direction: column;
+    }
+
+    .box-inputs {
+        flex-direction: column;
+    }
+
+    #box-services {
+        overflow-y: scroll;
+    }
+
+    #services {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #box-aboutMe {
+    }
+
+    #my_photo {
+        display: none;
+    }
+
+}
+
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+/* SECCION 1 */
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+
+#home_page {
+    height: 40vh;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-name {
+    width: 70%;
+    margin: 1%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    padding: 1%;
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: 3px 0px 0px var(--cadet-space);
+}
+
+#box-ui-ux {
+    width: 75px;
+    height: 35px;
+    padding: 1%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    color: snow;
+    background: linear-gradient(180deg, var(--indigo-tropical),var(--verde-claro-oceano));
+    border-radius: 20px;
+}
+
+.box-presentation {
+    display: flex;
+    align-items: center;
+}
+
+.box-presentation p {
+    width: 50%;
+    padding: 2%;
+    font-size: 13pt;
+    font-weight: 600;
+}
+
+.box-inputs {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box-inputs button {
+    width: 150px;
+    height: 50px;
+    padding: 2%;
+    border: 1px solid black;
+    background: none;
+    font-size: 15pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.box-inputs button:hover {
+    background-color: var(--verde-claro-oceano);
+    box-shadow: 0px 0px 7px var(--indigo-tropical);
+    transition: all 0.3s;
+}
+
+
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+/* SECCION 2 */
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+
+#box-services {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    width: 100%;
+}
+
+#services {
+    padding: 1%;
+    color: snow;
+    display: flex;
+}
+
+#services img {
+    width: 125px;
+    height: 125px;
+    padding: 2%;
+}
+
+#services article {
+    width: 50%;
+    height: 100%;
+    margin-right: 2%;
+    padding: 2%;
+    background-color: var(--violeta-ruso);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+#services article:hover {
+    background-color: var(--cadet-space);
+    box-shadow: 0px 0px 5px var(--verde-claro-oceano);
+    animation: goUp 1.5s both;
+    transition: all 0.4s;
+}
+
+@keyframes goUp {
+    to {
+        translate: 0 -20%;
+    }
+}
+
+#services article h3 {
+    color: var(--verde-claro-oceano);
+    text-shadow: 1px 0px 0px var(--blanco);
+    padding: 1%;
+}
+
+#services article:hover h3 {
+    color: var(--indigo-tropical);
+}
+
+#services article p {
+    padding: 1%;
+    font-size: 17px;
+    text-align: start;
+}
+
+#robot3D {
+    width: 300px;
+    height: 175px;
+}
+
+
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+/* SECCION 3 */
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+
+#box-aboutMe {
+    display:none;
+    grid-column: 1/3;
+    grid-row: 2/4;
+}
+
+#aboutMe {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#aboutMe h1 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+#aboutMe hr {
+    width: 90%;
+    height: 15px;
+    color: var(--violeta-ruso);
+    background-color: var(--violeta-ruso);
+    box-shadow: 0px 0px 5px var(--verde-claro-oceano);
+}
+
+.box-signatures {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1.4fr);
+    text-align: center;
+    row-gap: 5px;
+}
+
+.box-signatures i {
+    font-size: 40px;
+}
+
+.box-signatures div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-signatures div img {
+    width: 50px;
+    height: 50px;
+}
+
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+/* GRID COMPONENTS */
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+
+.signature1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.signature2 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.signature3 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.signature4 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.signature5 {
+    grid-column: 5/6;
+    grid-row: 1/3;
+}
+
+
+
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+/* SECCION 4 */
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+
+#my_photo {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-image: url("../media/guerrero-en-47-ronin_2048x1536_xtrafondos.com.jpg");
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+/* PAGINA DE MIS TRABAJOS */
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+
+#root2 {
+    width: 100vw;
+    /* height: 100vh; */
+    background: linear-gradient(180deg,transparent,var(--cadet-space),var(--violeta-ruso));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title2 {
+    width: 100vw;
+    font-size: 40px;
+    color:black;
+    text-shadow: 2px 0px 7px var(--indigo-tropical);
+    text-align: center;
+}
+
+.container2 {
+    width: 100%;
+    height: 100vh;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: repeat(3,1.4fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 10px;
+}
+
+.container2 section {
+    width: 90%;
+    height: 300px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--violeta-ruso);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--indigo-tropical);
+    cursor: pointer;
+}
+
+.container2 h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+.container2 img {
+    width: 250px;
+    height: 150px;
+}
+
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+/* GRID COMPONENTS */
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+
+@keyframes updateScale {
+    to {
+        scale: 0.9;
+    }
+}
+
+.work1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.work1:hover {
+    box-shadow: 0px 0px 5px var(--verde-claro-oceano);
+    background-color: rgba(255, 166, 0, 0.882);
+    animation: updateScale 0.6s both;
+    transition: all 0.4s;
+}
+
+.work2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.work2:hover {
+    box-shadow: 0px 0px 5px var(--violeta-ruso);
+    background-color: rgba(0, 170, 255, 0.858);
+    animation: updateScale 0.6s both;
+    transition: all 0.4s;
+}
+
+.work3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.work3:hover {
+    box-shadow: 0px 0px 5px var(--violeta-ruso);
+    background-color: rgba(25, 172, 37, 0.806);
+    animation: updateScale 0.6s both;
+    transition: all 0.4s;
+}
+
+.work4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.work4:hover {
+    box-shadow: 0px 0px 5px var(--verde-claro-oceano);
+    background-color: rgba(170, 0, 255, 0.85);
+    animation: updateScale 0.6s both;
+    transition: all 0.4s;
+}
+
+.work5 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.work5:hover {
+    box-shadow: 0px 0px 5px var(--violeta-ruso);
+    background-color: rgba(255, 0, 51, 0.85);
+    animation: updateScale 0.6s both;
+    transition: all 0.4s;
+}
+
+.work6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.work6:hover {
+    box-shadow: 0px 0px 5px var(--verde-claro-oceano);
+    background-color: rgba(0, 204, 255, 0.85);
+    animation: updateScale 0.6s both;
+    transition: all 0.4s;
+}
+
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+/* PAGINA DEL BLOG */
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+
+#root3 {
+    width: 100vw;
+    background-image: url("./../media/version_5.gif");
+    background-size:  cover;
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+
+.container3 {
+    width: 100%;
+    background: linear-gradient(360deg,transparent,#302f4d7f,#120d31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container3 h1 {
+    color: var(--blanco);
+    padding: 4%;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.container3 section {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container3 section article {
+    width: 40%;
+    height: 300px;
+    margin: 1%;
+    border-radius: 20px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--cadet-space);
+}
+
+.container3 section article h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.container3 section article img {
+    width: 200px;
+    height: 150px;
+}
+
+
+
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+/* PAGINA FORMULARIO LOGIN */
+/* -----------------------------------------------------------*/
+/* -----------------------------------------------------------*/
+
+.page2-root {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./../media/fondo1.gif");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.page2-container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#302f4d7f,#120d31c2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page2-title {
+    padding: 1%;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cadet-space);
+    text-shadow: 2px 0px 0px var(--verde-claro-oceano);
+}
+
+.page2-container form {
+    margin-top: 10%;
+}
+
+.page2-target {
+    width: 50%;
+    height:50%;
+    padding: 2%;
+    background: var(--cadet-space);
+    box-shadow: 0px 0px 5px var(--verde-claro-oceano);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--blanco);
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.page2-target input {
+    width: 80%;
+    height: 35px;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.sent {
+    font-size: 20px;
+    padding: 1%;
+    text-transform: uppercase;
+    font-weight: 800;
+    background: none;
+    border: 2px solid var(--verde-claro-oceano);
+    color: var(--verde-claro-oceano);
+    text-shadow: 0px 0px 5px var(--verde-claro-oceano);
+    cursor: pointer;
+}
+
+.sent:hover {
+    background-color: var(--verde-claro-oceano);
+    color: #FBFBFB;
+    text-shadow: 0px 0px 5px #FBFBFB;
+    animation: changeScale 0.5s both;
+
+}
+
+@keyframes changeScale {
+    to {
+        scale: 0.8;
+    }
+}
+
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/* PAGINA CREAR POST*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+
+#page3-root {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./../media/fondo1.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+#page3-root form {
+    background: linear-gradient(360deg,transparent,#302f4d7f,#120d31);
+}
+
+#page3-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+#page3-container section {
+    width: 50%;
+    height: 50vh;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 80%;
+    background-color: var(--cadet-space);
+    box-shadow: 0px 0px 7px var(--indigo-tropical);
+}
+
+#page3-container section label {
+    height: 35px;
+    font-size: 20px;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#page3-container input[type="text"] {
+    max-width: 300px;
+    height: 25px;
+    margin: 1%;
+    font-size: 14px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid var(--violeta-ruso);
+}
+
+
