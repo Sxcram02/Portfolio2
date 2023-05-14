@@ -56,7 +56,7 @@ if (isset($_POST['LOGOUT'])) {
                     $titulo = $_POST['titulo'];
 
                     $imageName = $_FILES['imagen']['name'];
-
+                    
                     $imagePath = $_FILES['imagen']['tmp_name'];
 
                     $path = "/media/$imageName";
@@ -65,10 +65,11 @@ if (isset($_POST['LOGOUT'])) {
 
                     $descripcion = $_POST['descripcion'];
 
-                    if(move_uploaded_file($imagePath,"/media/$imageName")) {
+                    $movimiento = move_uploaded_file($imagePath,"/media/$imageName");
+
+                    if($movimiento) {
 
                         $arrayDataPost = [$titulo, $path, $subtitulo, $descripcion, $_SESSION['user']];
-
                         if (isset($_POST['crear'])) {
 
                             $databaseConnect->setPost($arrayDataPost);

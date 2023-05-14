@@ -65,7 +65,7 @@ if (isset($_POST['LOGOUT'])) {
 
                     $descripcion = $_POST['descripcion'];
 
-                    if(move_uploaded_file($imagePath,"/media/$imageName")) {
+                    if(move_uploaded_file($imagePath,$path)) {
 
                         $arrayDataPost = [$titulo, $path, $subtitulo, $descripcion, $_SESSION['user']];
 

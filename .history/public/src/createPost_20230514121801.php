@@ -58,14 +58,19 @@ if (isset($_POST['LOGOUT'])) {
                     $imageName = $_FILES['imagen']['name'];
 
                     $imagePath = $_FILES['imagen']['tmp_name'];
+                    $typr = $_FILES['imagen'][]
 
+                    $typesFiles = ['jpg','gif'];
+                    if(in_array())
                     $path = "/media/$imageName";
 
                     $subtitulo = $_POST['subtitulo'];
 
                     $descripcion = $_POST['descripcion'];
 
-                    if(move_uploaded_file($imagePath,"/media/$imageName")) {
+                    $movimiento = move_uploaded_file($imagePath,"/media/$imageName");
+
+                    if($movimiento) {
 
                         $arrayDataPost = [$titulo, $path, $subtitulo, $descripcion, $_SESSION['user']];
 

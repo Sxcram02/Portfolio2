@@ -119,7 +119,7 @@ body {
 
 @media screen and (max-width:800px) {
     .box-nav-bar {
-        justify-content: space-around;
+        justify-content: center;
     }
     
     .nav-title {
@@ -127,14 +127,8 @@ body {
     }
 
     .nav-bar ul {
-        width: 100%;
         justify-content: flex-start;
-        font-size: 16px;
-    }
-
-    .nav-bar ul a {
-        margin: 1%;
-        padding: 2%;
+        font-size: 12px;
     }
 
     #LOGIN {
@@ -164,7 +158,7 @@ body {
 @media screen and (max-width:800px) {
 
     #root {
-        height: 110vh;
+        height: 105vh;
         background-image: url("/media/guerrero-en-47-ronin_2048x1536_xtrafondos.com.jpg");
         background-size: cover;
         background-position: center;
@@ -460,19 +454,13 @@ body {
 
 @media screen and (max-width:800px){
 
-
+    
     .box-signatures {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         overflow-y: scroll;
-    }
-
-    .box-signatures div {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
     }
 }
 
@@ -533,6 +521,7 @@ body {
 
 #root2 {
     width: 100vw;
+    /* height: 100vh; */
     background: linear-gradient(180deg,transparent,var(--cadet-space),var(--violeta-ruso));
     display: flex;
     flex-direction: column;
@@ -582,25 +571,6 @@ body {
 .container2 img {
     width: 250px;
     height: 150px;
-}
-
-@media screen and (max-width:800px) {
-    .container2 {
-        display: flex;
-        align-items: center;
-        flex-direction: column-reverse;
-        overflow-y: scroll;
-    }
-
-    .container2 section {
-        text-align: center;
-        width: 250px;
-    }
-
-    .container2 img {
-        width: 100px;
-        height: 100px;
-    }
 }
 
 /*--------------------------------------------------------*/
@@ -753,17 +723,7 @@ body {
     height: 150px;
 }
 
-@media screen and (max-width:800px){
-    #root3 .container3 article {
-        width: 60%;
-        padding: 5%;
-    }
 
-    #root3 .container3 img {
-        width: 100px;
-        height: 100px;
-    }
-}
 
 /* -----------------------------------------------------------*/
 /* -----------------------------------------------------------*/
@@ -908,17 +868,6 @@ body {
     text-transform: uppercase;
     border-radius: 5px;
     border: 1px solid var(--violeta-ruso);
-}
-
-
-@media screen and (max-width:800px) {
-    #page3-container section {
-        width: 80%;
-    }
-
-    #page3-container input[type="file"]{
-        width: 100px;
-    }
 }
 
 

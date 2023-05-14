@@ -11,6 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['LOGIN'])) {
         exit();
     }
 }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="es">

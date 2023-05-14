@@ -915,10 +915,6 @@ body {
     #page3-container section {
         width: 80%;
     }
-
-    #page3-container input[type="file"]{
-        width: 100px;
-    }
 }
 
 

@@ -753,17 +753,7 @@ body {
     height: 150px;
 }
 
-@media screen and (max-width:800px){
-    #root3 .container3 article {
-        width: 60%;
-        padding: 5%;
-    }
 
-    #root3 .container3 img {
-        width: 100px;
-        height: 100px;
-    }
-}
 
 /* -----------------------------------------------------------*/
 /* -----------------------------------------------------------*/
@@ -908,17 +898,6 @@ body {
     text-transform: uppercase;
     border-radius: 5px;
     border: 1px solid var(--violeta-ruso);
-}
-
-
-@media screen and (max-width:800px) {
-    #page3-container section {
-        width: 80%;
-    }
-
-    #page3-container input[type="file"]{
-        width: 100px;
-    }
 }
 
 
