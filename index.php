@@ -1,5 +1,5 @@
 <?php
-include("./public/objects/clases.inc.php");
+include("public/objects/clases.inc.php");
 
 session_start();
 
@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['LOGIN'])) {
     $logIn = $_POST['LOGIN'];
     if (isset($logIn)) {
         $_SESSION['user'] = $sesion;
-        header("Location: ./public/src/login.php");
+        header("Location: public/src/login.php");
         exit();
     }
 }
@@ -55,6 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' and isset($_POST['LOGIN'])) {
                     <div class="box-inputs">
                         <button onclick="mostrarApartado('box-services','box-aboutMe')">Sobre Mi</button>
                         <button onclick="mostrarApartado('box-aboutMe','box-services')">Servicios</button>
+                        <a href="./public/src/assets/feed.xml" target="_blank" rel="noopener noreferrer"><button>Feed</button></a>
                     </div>
                 </article>
             </section>

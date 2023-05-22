@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./../../../styles/index.css" type="text/css"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+            <header class="box-nav-bar">
+            <a href="/index.php"><h3 class="nav-title">M a r c o s</h3></a>
+            <nav class="nav-bar">
+                <ul>
+                    <a href="index.php"><li>Home Page</li></a>
+                    <a href="/public/src/assets/work.php"><li>Work</li></a>
+                    <a href="/public/src/assets/blog.php"><li>Blog</li></a>
+                </ul>
+            </nav>
+            <form action="#" method="POST">
+                <input type="submit" name="LOGIN" id="LOGIN" value="login" />
+            </form>
+        </header>
+    <channel>
+        <title>Mis redes sociales</title>
+        <atom:link href="https://ejemplo.com/rss" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Dom 14 Mayo 2023 18:07 GMT+0</lastBuildDate>
+        <language>es</language>
+        <item>
+            <title>GITHUB</title>
+            <link>https://github.com/Sxcram02</link>
+            <description>Visita mi perfil de GitHub <a href="https://github.com/Sxcram02">aquí</a>.</description>
+            <pubDate>Dom 14 Mayo 2023 18:20 GMT+0</pubDate>
+        </item>
+        <item>
+            <title>Instagram</title>
+            <link>https://www.instagram.com/Sxcram.02/</link>
+            <description>Visita mi perfil de Instagram <a href="https://www.instagram.com/Sxcram.02/">aquí</a>.</description>
+            <pubDate>Dom 14 Mayo 2023 18:20 GMT+0</pubDate>
+        </item>
+        <item>
+            <title>LinkedIn</title>
+            <link>https://www.linkedin.com/in/marcos-dominguez-vega-82402626b/</link>
+            <description>Visita mi perfil de LinkedIn <a href="https://www.linkedin.com/in/marcos-dominguez-vega-82402626b/">aquí</a>.</description>
+            <pubDate>Dom 14 Mayo 2023 18:20 GMT+0</pubDate>
+        </item>
+        <item>
+            <title>Whatsapp</title>
+            <link>+34 642363013</link>
+            <description>Contáctame por WhatsApp al número +34 642363013.</description>
+            <pubDate>Dom 14 Mayo 2023 19:12 GMT+0</pubDate>
+        </item>
+    </channel>
+</rss>
